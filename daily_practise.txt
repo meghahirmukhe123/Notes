@@ -1,0 +1,233 @@
+1]15/5/2023
+Take a string array.make alter chraracter of each string in uppercase.
+Ex:
+i/p: str={"megha","raju","cat","ab"}
+o/p: ans={"mEgHa","rAjU","cAt","aB"}
+
+2]16/5/2023
+Write a function to count the number of even and odd elements in an array.
+Ex:
+arr=[12,3,4,5,6,7,8,18]
+odd numbers=3 [3,5,7]
+even numbers=5   [12,4,6,8,18]
+
+3]17/5/2023
+Take a integer array first add even numbers then add odd numbers.
+EX:
+a=[12,3,4,78,7,2]
+o/p=[12,4,78,2,3,7]
+
+
+4]18/5/2023
+Find the pair of elements that sum up to a given target:
+Given an array of integers and a target sum, write a function to find a pair of elements in the array that add up to the target sum. 
+The function should return the indices of the two elements.
+
+Ex:
+arr=[1,4,5,2]
+addition=6
+o/p=[1,5]  index of 1 is=0 
+           index of 5 is=2
+
+5]19/5/2023
+Given an array of integers, rearrange the array in alternating positive and negative numbers.
+Ex: arr=[1,9,-3,8,-4,-1,10]
+o/p=[-3,-4,-1,1,9,8,10]
+
+6]22/05/2023
+Give two array and add both of them in in single array  and remove the duplicates 
+
+Ex arr = [1,3,2,5,4,7,8]
+
+    arr1 = [1,6,9,8,5]
+
+o/p = [1,3,2,4,5,6,7,8]
+
+7]23/05/2023
+Write the Program for the star pattern
+
+ *
+
+ **
+
+ ***
+
+ ****
+
+ 
+   *
+
+   * *
+
+  * * *
+
+ * * * *
+
+8]24/05/2023
+print the following pattern 
+
+ABCDEEDCBA
+ABCD  DCBA
+ABC    CBA
+AB      BA
+A        A
+
+
+9]25/05/2023
+write a code for the table of 2 using recurssion !
+
+10]26/05/2023
+Write a code for to check the pallindrome number 
+E.g 121
+o/p It is palllindrome number 
+
+E.g 123
+o/p It is not pallindrome number.
+
+11]29/05/2023
+Take a 3D array. make middle row 0.
+ex:
+arr=1 2 3
+    4 5 6
+    7 8 9
+o/p= 1 0 3
+     4 0 6
+     5 0 9
+
+12]30/05/2023
+Take a array .print addition of all even index numbers from array and 
+print addition of odd index numbers from array.
+ex: arr=[1,2,3,4,5,6]
+odd=1+3+5  sum=9
+even=2+4+6  sum=12
+
+13]31/05/2023
+Write a program to find the kth smallest element in an unsorted array.
+ex:
+arr=[1,3,4,0,8]
+k=2
+o/p=1
+
+ex:
+arr=[6,3,9,2,7]
+k=3
+o/p=6
+
+14]1/06/2023
+take a string array.remove duplicate charater from all strings.
+Ex: arr={"meena","raja","doggie"}
+o/p= arr={"mna",'rj","doie"}
+
+15]2/06/2023
+take a matrix.if number is even then replace that number with its nextnumber.
+ex:
+a=
+1 2 3
+4 5 6
+7 8 9
+
+o/p=
+1 3 3
+5 5 6
+7 9 9
+
+
+16] 5/06/2023
+Write a program to count the occurrence of each character in a string and display the count for each character.
+
+and
+Shift the array by 1 position
+
+a=[1,5,7,8,9,4}
+
+o/p=[{5,7,8,9,4,1}
+
+17]6/6/2023
+Shift the array by 1 position a=[1,5,7,8,9,4} o/p=[{5,7,8,9,4,1}
+shift the aray with 2 and 3 position
+
+18] 7/6/2023
+Implement a predicate function in Java that determines whether a string is a palindrome.
+AND
+Fibonacci Series Program.
+
+19]8/6/2023
+Find the 100 prime number not the 1st 100 prime number 
+count should be 100 of the prime number !
+
+20]9/6/2023
+Write a program to find the factorial 
+Ex 5 
+o/p -120 (5*4*3*2*1)
+
+21]12/6/2023
+
+Problem Statement: Longest Common Prefix
+
+Given an array of strings, find and return the longest common prefix among all the strings. A common prefix is defined as the longest consecutive sequence of characters that is common to all strings in the array.
+
+Write a function that takes the input array of strings and returns the longest common prefix as a string.
+
+Example:
+
+Input: ["flower", "flow", "flight"]
+Output: "fl"
+
+Input: ["dog", "racecar", "car"]
+Output: ""
+
+Note:
+The input array will have at least one string.
+All strings in the array will consist of lowercase letters only.
+
+
+22]13/06/2023
+Question:
+Given an array of integers, find the length of the longest increasing subarray.
+Write a function that takes the input array of integers and returns the length of the longest increasing subarray.
+
+Note:
+An increasing subarray is defined as a contiguous subarray where the elements are in increasing order.
+The input array will have at least one element.
+Example:
+Input: [10, 9, 2, 5, 3, 7, 101, 18]
+Output: 4
+
+Explanation: The longest increasing subarray is [2, 5, 3, 7], which has a length of 4.
+Note:cant use any sort method.
+
+23]14/06/2023
+write program for pangram.
+pangram means sentence contains all the alphabets.
+
+24] 15/06/2023
+Find average of even numbers from given list.
+
+25] 16/06/2023
+Write a program to sort a list of strings in descending order of length.
+
+26]19/06/2023
+print count of string comparing with two strings
+ex: str1={"ab","bc","cd"};
+    str2={"ab","rt","cd"}'
+o/p:- ab=2,bc=1,cd=2,rt=1
+
+27]20/6/2023
+Write a program to sort a list of strings in descending order of length.(same question of day 16/6/2023)
+
+************************************************************************************************************************************
+3/10/2023
+28]sort string array.
+ 29] find second largest and smallest number from array
+  30] Kth smallest and largest
+   31] find duplicate numbers
+    32] there are numbers which are repeating twise find that number which is not repeating twise
+     33] find missing number
+      34] find duplicate elements between two arrays
+       35] remove duplicates and print length of new array
+
+
+
+
+
+

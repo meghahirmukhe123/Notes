@@ -1,0 +1,29 @@
+//what is annotation
+-They are used to convey instructions, configuration, or behavior to the compiler, runtime system, or other tools that process the annotated code.
+
+//12 spring boot annotation
+
+1]@SpringBootApplication
+   a. @EnableAutoConfiguration 
+   b. @ComponentScan    (we can pass packages)
+   c. @Configuration
+
+2]@Configuration
+-we write those method here which is return by bean
+-it show that class is sourse of bean
+
+3]@Bean
+-it is present inside @Configuration
+
+4] @Autowired
+
+5]@Component
+   a. @Controller(it will work like a component as well as work as MVC Controller)
+   b. @Service (use in service layer)
+   c. @Repository(use in Dao layer. if unchecked exception occure it will rethrough it)
+
+6]@ComponentScan
+
+7] @Qualifier 
+
+8]@PostConstruct   //to load belowe list at start of project

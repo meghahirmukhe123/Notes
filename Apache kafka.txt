@@ -1,0 +1,121 @@
+//what is kafka(It is Asynchronous messaging system)
+-Apache Kafka is an event streaming platform used to 
+collect, process, store, and integrate data at scale.
+-Kafka is distributed message streaming platform that uses publish and subscribe
+mechanism to stream the records.
+-It is open source.
+-It can handle millions of messages.
+-Kafka was created by a small team of engineers at LinkedIn in 2011.
+-Zookeeper is server provided by Hadoop.
+-Apache Kafka provides a highly scalable, fault-tolerant, and publish-subscribe messaging system. 
+-It is designed to handle real-time data feeds and event streaming applications, 
+making it a popular choice for building data pipelines, streaming applications, and integrating various systems and services.
+-The core abstraction in Kafka is the "topic," which is feed name to which records can be published and from which records can be consumed. 
+Producers publish messages to topics.
+
+    producer1  producer2  producer
+     \           /        /
+          Kafka Ecosystem
+        /   |        \        \
+consumer1 consumer2 consumer3 consumer4
+
+//bydefault port no of kafka=9092 
+
+//to start zookeeper
+C:\kafka>.\bin\windows\zookeeper-server-start.bat .\config\zookeeper.properties
+
+//to kickoff kafka server OR to start the Kafka broker service
+C:\kafka>.\bin\windows\kafka-server-start.bat .\config\server.properties
+
+or
+
+C:\kafka>bin\windows\kafka-server-start.bat config\server.properties
+
+
+//to create topic(in following topic name is "test")
+C:\kafka\bin\windows>kafka-topics.bat --create --topic topic-name --bootstrap-server localhost:9092
+
+**topics is a table in relational database.our data is in flexible format but topic 
+will store data in json format.
+
+
+//to kickoff data from producer in topic ("test" is topic name)
+C:\kafka\bin\windows>kafka-console-producer.bat --broker-list localhost:9092 --topic test
+
+//to kickoff consumer
+C:\kafka\bin\windows>kafka-console-consumer.bat --topic test --bootstrap-server localhost:9092 --from-beginning
+** "from-beginning" is just argument
+
+//to send data from producer
+C:\kafka\bin\windows>kafka-console-producer.bat --broker-list localhost:9092 --topic test
+{"name":"megha","age":"22","gender":"f"}    //just a random data.when we hit enter we will see this same data in consumer side as well.
+
+//types of messaging system
+1]Point to point  messaging system - only one receiver can see the msg store by producer and
+ after that that msg will be automatically get deleted.
+2]Publish subscribe messaging system- any number of consumer can see the msg stored in queue by producer.It will not get delete.
+
+
+//Old Messaging systems before Kafka
+1.JMS based
+2.ActiveMQ
+3.RabbitMQ
+etc...
+
+//.bat extension means it is batch file.
+
+-Through put=>operation done per second.
+-Through put of database is less.i.e. we can't perform operation fastly.
+-kafka has high throughput,but storage is low.
+-Database has low throughtput but storage is high.
+-we can perform query operation on database but can't perform operation on kafka.
+
+-ops(operation per second)
+-Topic = Logial partitioning of messages.
+
+
+//basic functionality architecture
+kafka  ----> topic -----> Partitions
+
+//Imp note:
+-One consumer can consume multiple partitions but 
+-One partition cant be consume by multiple consumer.
+
+**basic architecture**  p=partition  c=consumer
+p1         c1
+p2         c2
+p3         c3 
+
+c1 can consumer p1,p2,p3
+but
+now p1 p2 p3 can't consume by c2 and c3
+
+____________________________________________________________________________________________________________________________________
+
+#producer configuration
+
+spring.kafka.producer.bootstrap-servers= localhost:9092
+
+#serialization classes for key and value
+
+#note:apache kafka library dont have support for json serialization and deserialization.thats why made folowing configuration
+spring.kafka.producer.key-serializer = org.apache.kafka.common.serialization.StringSerializer
+spring.kafka.producer.value-serializer = org.springframework.kafka.support.serializer.JsonSerializer
+
+
+#define kafka topic
+spring.kafka.topic.name = order_topics
+
+_____________________________________________________________________________________________________________________________________
+#consumer configuration
+spring.kafka.consumer.bootstrap-servers= localhost:9092
+spring.kafka.consumer.group-id= stock
+spring.kafka.consumer.auto-offset-reset=earliest
+spring.kafka.consumer.key-deserializer=org.apache.kafka.common.serialization.StringDeserializer
+spring.kafka.consumer.value-deserializer=org.apache.kafka.common.serialization.StringDeserializer
+
+spring.kafka.consumer.properties.spring.json.trusted.packages=*  //spring kafka will trust all packages
+spring.kafka.topic.name=order-topics
+
+_____________________________
+condition: broker failes then what?
