@@ -1,0 +1,22 @@
+1. OOPS concepts   
+2. Collection
+3. exception handling
+4. lamda expression
+5. streams(methods)
+6. java 8 feature
+7.Global exception
+8.JUnit
+9.Spring security
+10.Kafka
+_________________________________________________________________________________________________
+
+
+1.Lambda Expression-done
+2.Stream API-done
+3.Optional
+4.Default methods-done
+5.date and time API
+6.Method reference-done
+7.Completable future
+8.parallel operations
+9.Mutable and immutable class

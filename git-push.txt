@@ -1,0 +1,221 @@
+step1:cd git_demo
+step2:cd myrepo
+step3:add copy and paste folder in myrepo file
+step4:git add .
+step5:git status
+step6:git commit -m "added project"
+step7:git push -u origin master
+
+//to make directory
+mkdir name
+
+___________________________________________________________________________________________________________________________________________
+
+
+NTS-Megha Hirmukhe@NTS-MeghaHirmukhe MINGW64 ~ (master)
+$ cd git_demo
+
+NTS-Megha Hirmukhe@NTS-MeghaHirmukhe MINGW64 ~/git_demo (master)
+$ pwd
+/c/Users/NTS-Megha Hirmukhe/git_demo
+
+NTS-Megha Hirmukhe@NTS-MeghaHirmukhe MINGW64 ~/git_demo (master)
+$ mkdir dailyCode
+
+NTS-Megha Hirmukhe@NTS-MeghaHirmukhe MINGW64 ~/git_demo (master)
+$ cd dailyCode
+
+NTS-Megha Hirmukhe@NTS-MeghaHirmukhe MINGW64 ~/git_demo/dailyCode (master)
+$ git init
+Initialized empty Git repository in C:/Users/NTS-Megha Hirmukhe/git_demo/dailyCode/.git/
+
+NTS-Megha Hirmukhe@NTS-MeghaHirmukhe MINGW64 ~/git_demo/dailyCode (master)
+$ ^C
+
+NTS-Megha Hirmukhe@NTS-MeghaHirmukhe MINGW64 ~/git_demo/dailyCode (master)
+$ git remote add origin https://github.com/meghahirmukhe123/dailyCode.git
+
+NTS-Megha Hirmukhe@NTS-MeghaHirmukhe MINGW64 ~/git_demo/dailyCode (master)
+$ git remote -v
+origin  https://github.com/meghahirmukhe123/dailyCode.git (fetch)
+origin  https://github.com/meghahirmukhe123/dailyCode.git (push)
+
+NTS-Megha Hirmukhe@NTS-MeghaHirmukhe MINGW64 ~/git_demo/dailyCode (master)
+$ git status
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+
+NTS-Megha Hirmukhe@NTS-MeghaHirmukhe MINGW64 ~/git_demo/dailyCode (master)
+$ git add .
+warning: in the working copy of 'daily_practise/.metadata/.log', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'daily_practise/.metadata/.plugins/org.eclipse.m2e.logback/logback.2.1.100.20230106-1511.xml', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'daily_practise/.vscode/settings.json', LF will be replaced by CRLF the next time Git touches it
+
+NTS-Megha Hirmukhe@NTS-MeghaHirmukhe MINGW64 ~/git_demo/dailyCode (master)
+$ git commit -m "daily practise"
+[master (root-commit) ce56f1c] daily practise
+ 107 files changed, 4914 insertions(+)
+ create mode 100644 daily_practise/.classpath
+ create mode 100644 daily_practise/.metadata/.lock
+ create mode 100644 daily_practise/.metadata/.log
+ create mode 100644 daily_practise/.metadata/.plugins/org.eclipse.core.resources/.projects/.org.eclipse.egit.core.cmp/.location
+ create mode 100644 daily_practise/.metadata/.plugins/org.eclipse.core.resources/.root/.indexes/history.version
+ create mode 100644 daily_practise/.metadata/.plugins/org.eclipse.core.resources/.root/.indexes/properties.index
+ create mode 100644 daily_practise/.metadata/.plugins/org.eclipse.core.resources/.root/.indexes/properties.version
+ create mode 100644 daily_practise/.metadata/.plugins/org.eclipse.core.resources/.root/5.tree
+ create mode 100644 daily_practise/.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources
+ create mode 100644 daily_practise/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.core.resources.prefs
+ create mode 100644 daily_practise/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.egit.core.prefs
+ create mode 100644 daily_practise/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.jdt.ui.prefs
+ create mode 100644 daily_practise/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.jsch.core.prefs
+ create mode 100644 daily_practise/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.jst.j2ee.webservice.ui.prefs
+ create mode 100644 daily_practise/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.m2e.apt.prefs
+ create mode 100644 daily_practise/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.m2e.discovery.prefs
+ create mode 100644 daily_practise/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.ide.prefs
+ create mode 100644 daily_practise/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.navigator.prefs
+ create mode 100644 daily_practise/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.prefs
+ create mode 100644 daily_practise/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.workbench.prefs
+ create mode 100644 daily_practise/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.urischeme.prefs
+ create mode 100644 daily_practise/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.springframework.ide.eclipse.imports.prefs
+ create mode 100644 daily_practise/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.springsource.ide.eclipse.commons.frameworks.core.prefs
+ create mode 100644 daily_practise/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.springsource.ide.eclipse.commons.ui.prefs
+ create mode 100644 daily_practise/.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi
+ create mode 100644 daily_practise/.metadata/.plugins/org.eclipse.egit.core/.org.eclipse.egit.core.cmp/.project
+ create mode 100644 daily_practise/.metadata/.plugins/org.eclipse.egit.core/.org.eclipse.egit.core.cmp/.settings/org.eclipse.core.resources.prefs
+ create mode 100644 daily_practise/.metadata/.plugins/org.eclipse.jdt.core/assumedExternalFilesCache
+ create mode 100644 daily_practise/.metadata/.plugins/org.eclipse.jdt.core/externalFilesCache
+ create mode 100644 daily_practise/.metadata/.plugins/org.eclipse.jdt.core/javaLikeNames.txt
+ create mode 100644 daily_practise/.metadata/.plugins/org.eclipse.jdt.core/nonChainingJarsCache
+ create mode 100644 daily_practise/.metadata/.plugins/org.eclipse.jdt.core/variablesAndContainers.dat
+ create mode 100644 daily_practise/.metadata/.plugins/org.eclipse.jdt.ui/OpenTypeHistory.xml
+ create mode 100644 daily_practise/.metadata/.plugins/org.eclipse.jdt.ui/QualifiedTypeNameHistory.xml
+ create mode 100644 daily_practise/.metadata/.plugins/org.eclipse.m2e.core/workspaceState.ser
+ create mode 100644 daily_practise/.metadata/.plugins/org.eclipse.m2e.logback/0.log
+ create mode 100644 daily_practise/.metadata/.plugins/org.eclipse.m2e.logback/logback.2.1.100.20230106-1511.xml
+ create mode 100644 daily_practise/.metadata/.plugins/org.eclipse.oomph.setup/workspace.setup
+ create mode 100644 daily_practise/.metadata/.plugins/org.eclipse.tips.ide/dialog_settings.xml
+ create mode 100644 daily_practise/.metadata/.plugins/org.eclipse.ui.ide/dialog_settings.xml
+ create mode 100644 daily_practise/.metadata/.plugins/org.eclipse.ui.intro/introstate
+ create mode 100644 daily_practise/.metadata/.plugins/org.eclipse.ui.workbench/dialog_settings.xml
+ create mode 100644 daily_practise/.metadata/.plugins/org.eclipse.ui.workbench/workingsets.xml
+ create mode 100644 daily_practise/.metadata/.plugins/org.eclipse.wst.common.snippets/hidden.xml
+ create mode 100644 daily_practise/.metadata/.plugins/org.eclipse.wst.common.snippets/user.xml
+ create mode 100644 daily_practise/.metadata/version.ini
+ create mode 100644 daily_practise/.project
+ create mode 100644 daily_practise/.vscode/settings.json
+ create mode 100644 daily_practise/Fibonacci_Series.class
+ create mode 100644 daily_practise/Fibonacci_Series.java
+ create mode 100644 daily_practise/alterAdd.class
+ create mode 100644 daily_practise/alterAdd.java
+ create mode 100644 daily_practise/avgOfEvenFromList.class
+ create mode 100644 daily_practise/avgOfEvenFromList.java
+ create mode 100644 daily_practise/commonSubString.class
+ create mode 100644 daily_practise/commonSubString.java
+ create mode 100644 daily_practise/countOfCharacter.class
+ create mode 100644 daily_practise/countOfCharacter.java
+ create mode 100644 daily_practise/countSimiliarString.class
+ create mode 100644 daily_practise/countSimiliarString.java
+ create mode 100644 daily_practise/daily_practise/countStringByForLoop.class
+ create mode 100644 daily_practise/daily_practise/countStringByForLoop.java
+ create mode 100644 daily_practise/factorial.class
+ create mode 100644 daily_practise/factorial.java
+ create mode 100644 daily_practise/findIndex.class
+ create mode 100644 daily_practise/findIndex.java
+ create mode 100644 daily_practise/findSquareRoot.class
+ create mode 100644 daily_practise/findSquareRoot.java
+ create mode 100644 daily_practise/kthElement.class
+ create mode 100644 daily_practise/kthElement.java
+ create mode 100644 daily_practise/kthSmall.class
+ create mode 100644 daily_practise/kthSmall.java
+ create mode 100644 daily_practise/listKthElement.class
+ create mode 100644 daily_practise/listKthElement.java
+ create mode 100644 daily_practise/matrix.class
+ create mode 100644 daily_practise/matrix.java
+ create mode 100644 daily_practise/numFromArray.class
+ create mode 100644 daily_practise/numFromArray.java
+ create mode 100644 daily_practise/palindrome.class
+ create mode 100644 daily_practise/palindrome.java
+ create mode 100644 daily_practise/palindrome2.class
+ create mode 100644 daily_practise/palindrome2.java
+ create mode 100644 daily_practise/palindromeUsingPredicate.class
+ create mode 100644 daily_practise/palindromeUsingPredicate.java
+ create mode 100644 daily_practise/pangram.class
+ create mode 100644 daily_practise/pangram.java
+ create mode 100644 daily_practise/prime100.class
+ create mode 100644 daily_practise/prime100.java
+ create mode 100644 daily_practise/randomPassword.class
+ create mode 100644 daily_practise/randomPassword.java
+ create mode 100644 daily_practise/removeChar.java
+ create mode 100644 daily_practise/removeCharFromString.class
+ create mode 100644 daily_practise/removeCharFromString.java
+ create mode 100644 daily_practise/removeChartry2.class
+ create mode 100644 daily_practise/removeChartry2.java
+ create mode 100644 daily_practise/replaceWithNext.class
+ create mode 100644 daily_practise/replaceWithNext.java
+ create mode 100644 daily_practise/shiftBy1.class
+ create mode 100644 daily_practise/shiftBy1.java
+ create mode 100644 daily_practise/shiftByindex.class
+ create mode 100644 daily_practise/shiftByindex.java
+ create mode 100644 daily_practise/shiftby1_2_3.class
+ create mode 100644 daily_practise/shiftby1_2_3.java
+ create mode 100644 daily_practise/subStringPalindrome.class
+ create mode 100644 daily_practise/subStringPalindrome.java
+ create mode 100644 daily_practise/xyz.class
+ create mode 100644 daily_practise/xyz.java
+
+NTS-Megha Hirmukhe@NTS-MeghaHirmukhe MINGW64 ~/git_demo/dailyCode (master)
+$ git push -u origin master
+Enumerating objects: 133, done.
+Counting objects: 100% (133/133), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (117/117), done.
+Writing objects: 100% (133/133), 108.95 KiB | 3.51 MiB/s, done.
+Total 133 (delta 6), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (6/6), done.
+To https://github.com/meghahirmukhe123/dailyCode.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
+NTS-Megha Hirmukhe@NTS-MeghaHirmukhe MINGW64 ~/git_demo/dailyCode (master)
+
+
+__________________________________________________________________________________________________________________________________________________
+
+//git push from Intellij
+
+From https://gitlab.com/neutrinoai/intellidocs/self-service-portal
+ * [new branch]        easy-rules-integration-ssp -> origin/easy-rules-integration-ssp
+PS C:\Users\NTS-Megha Hirmukhe\Desktop\ProductCode\self_service_portal\self-service-portal> git add .
+PS C:\Users\NTS-Megha Hirmukhe\Desktop\ProductCode\self_service_portal\self-service-portal> git commit -m "ROleserviceImpl test done"
+[megha.hirmukhe.RoleServiceImpl 52535beb] ROleserviceImpl test done
+ 3 files changed, 128 insertions(+), 41 deletions(-)
+ create mode 100644 src/test/java/com/nts/UserServiceImplTest.java
+PS C:\Users\NTS-Megha Hirmukhe\Desktop\ProductCode\self_service_portal\self-service-portal> git push
+fatal: The current branch megha.hirmukhe.RoleServiceImpl has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin megha.hirmukhe.RoleServiceImpl
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+PS C:\Users\NTS-Megha Hirmukhe\Desktop\ProductCode\self_service_portal\self-service-portal> git push --set-upstream origin megha.hirmukhe.RoleServiceImpl
+Enumerating objects: 76, done.
+Counting objects: 100% (76/76), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (37/37), done.
+Writing objects: 100% (47/47), 13.43 KiB | 2.69 MiB/s, done.
+Total 47 (delta 26), reused 0 (delta 0), pack-reused 0
+remote: 
+remote: To create a merge request for megha.hirmukhe.RoleServiceImpl, visit:
+remote:   https://gitlab.com/neutrinoai/intellidocs/self-service-portal/-/merge_requests/new?merge_request%5Bsource_branch%5D=megha.hirmukhe.RoleServiceImpl  
+remote:
+To https://gitlab.com/neutrinoai/intellidocs/self-service-portal.git
+ * [new branch]        megha.hirmukhe.RoleServiceImpl -> megha.hirmukhe.RoleServiceImpl
+branch 'megha.hirmukhe.RoleServiceImpl' set up to track 'origin/megha.hirmukhe.RoleServiceImpl'.
+PS C:\Users\NTS-Megha Hirmukhe\Desktop\ProductCode\self_service_portal\self-service-portal> 
+PS C:\Users\NTS-Megha Hirmukhe\Desktop\ProductCode\self_service_portal\self-service-portal>
+

@@ -1,0 +1,8 @@
+#Applications of jira
+1.jira work management - used for business projects
+2.jira software - used for software projects
+3.jira service management - used for service projects
+
+#Jira instances
+1.cloud instance =>using jira in jira cloud instance
+2.server instance => using jira on our server instance

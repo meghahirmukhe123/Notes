@@ -1,0 +1,77 @@
+//J-Unit dependancy
+<!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api -->
+<dependency>
+    <groupId>org.junit.jupiter</groupId>
+    <artifactId>junit-jupiter-api</artifactId>
+    <version>5.10.0</version>
+    <scope>test</scope>
+</dependency>
+
+   
+
+//mockito core dependancy
+
+<!-- https://mvnrepository.com/artifact/org.mockito/mockito-core -->
+<dependency>
+    <groupId>org.mockito</groupId>
+    <artifactId>mockito-core</artifactId>
+    <version>5.5.0</version>
+    <scope>test</scope>
+</dependency>
+
+
+//we use maven-surefire-plugins dependancy to configure maven to find unit tests
+=>in pom.xml
+   inside 
+<build>
+      // we will make following configuration
+    <configuration> 
+        <testFailureIgnore>true</testFailureIgnore>  //we have to add this line so that even if some tests are fail still we can see test report
+    </configuration>
+</build>
+
+
+//command to run test
+mvn clean test
+
+//to add website resources images,css etc
+mvn site -DgenerateReports=false
+
+//to display display name of test in report
+add 
+<statelessTestsetReporter implementation="org.apache.maven.plugin.surefire.extensions.junit5.JUnit5Xml30StatelessReporter">
+					
+<usePhrasedTestCaseMethodName>true</usePhrasedTestCaseMethodName>
+ </statelessTestsetReporter>
+
+this inside configuration of plugins of maven-surefire-plugin
+
+//to see test report using maven add following plugins 
+<plugin>
+ <groupId>org.jacoco</groupId>
+ <artifactId>jacoco-maven-plugin</artifactId>
+ <version>0.8.7</version>
+   <executions>
+	<execution>
+	 <id>jacoco-prepare</id>
+	   <goals>
+		<goal>prepare-agent</goal>
+	   </goals>
+	</execution>
+
+  <execution>
+	<id>jacoco-report</id>
+	<phase>test</phase>
+	  <goals>
+	    <goal>report</goal>
+	  </goals>
+ </execution>
+   </executions>
+</plugin>
+
+    -after adding above after running test through command line we will get jacoco folder and inside that we will get index.html.
+     right click on that-> select open with->web browser
+     we will get test report create by jacoco.
+
+//to check maven dependancy through command line
+open command line and type => mvn dependency:tree => enter
