@@ -1,0 +1,41 @@
+//12 spring boot annotation
+
+1]@SpringBootApplication
+   a. @EnableAutoConfiguration 
+   b. @ComponentScan    (we can pass packages)
+   c. @Configuration
+
+2]@Configuration
+-we write those method here which is return by bean
+-it show that class is sourse of bean
+
+3]@Bean
+-it is present inside @Configuration
+
+4] @Autowired
+
+5]@Component
+   a. @Controller(it will work like a component as well as work as MVC Controller)
+   b. @Service (use in service layer)
+   c. @Repository(use in Dao layer. if unchecked exception occure it will rethrough it)
+
+6]@ComponentScan
+
+7] @Qualifier 
+__________________________________________________________________________________________________________________________
+//Difference between PUT and PATCH
+-When we use PUT method we have to pass all the attrinutes or paramters but in case of PATCH
+we just need to pass that particular attribute in which we want to make change.
+EX:lets consider we have class student and paramter as id,name,std. we want to make change in id only
+===when we use PUT method we have to all those paramters as id,name,std. but in case of PATCH we just need to pass id parameter only.
+-PATCH is use to update partially.
+
+________________________________________________________________________________________________________________________
+//<Optional> return type
+-It provides a clear and explicit way to convey the message that there may not be a value, without using null.
+
+
+
+
+
+
